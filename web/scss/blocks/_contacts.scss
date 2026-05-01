@@ -1,0 +1,22 @@
+.contacs{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.contacts_grid{
+display: grid;
+row-gap: 20px;
+column-gap: 120px;
+padding-top: 64px;
+align-self: stretch;
+grid-template-rows: repeat(1, minmax(0, 1fr));
+grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact{
+display: flex;
+align-items: center;
+gap: 19px;
+}

@@ -1,0 +1,81 @@
+
+.html, body, p{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px; 
+  margin: 0;
+  padding: 0 8%;
+}
+
+.h1 {
+  color: #000;
+  font-family: "Actay Wide";
+  font-size: 160px;
+  margin: 0;
+}
+
+.h2 {
+  color: #000;
+  font-family: "Actay Wide";
+  font-size: 64px;
+  margin: 0;
+}
+
+.h3{
+color: #000;
+font-family: "Actay Wide";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.body1{
+color: #000;
+font-family: "Actay";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.body2{
+color: #000;
+font-family: "Actay Wide";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.body3{
+color: #000;
+font-family: "Actay";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.btn_text{
+color: #000;
+font-family: "Actay Wide";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.text-white {
+  color: white !important;
+}

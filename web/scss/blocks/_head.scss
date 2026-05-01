@@ -1,0 +1,17 @@
+.image{
+  display: block;
+  width: 470px;
+  height: auto;
+  position:absolute;
+  right: 0%;
+  top: -5%;
+  object-fit:contain;
+  pointer-events: none;
+}
+
+.head {
+  display: flex;
+  height: 364px;
+  flex-direction: column;
+  align-items: flex-start;
+}
