@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заявка</title>
-
+    <title>Оставить заявку</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js?v=40" defer></script>
 </head>
-<body>
 
+<body>
 <div class="container">
 
     <a href="serv1.html" class="back_btn body3">← Назад</a>
 
-    <section class="serv">
+    <section class="serv request_page">
         <div class="serv_content">
             <p class="h2">Оставить<br>заявку</p>
 
-            <form action="/api/messages" method="post" class="form-center">
-                <input type="text" name="name" placeholder="ФИО" required class="input-field"><br><br>
+            <form id="requestForm" class="form-center">
+                <input type="text" id="name" name="name" placeholder="ФИО" required class="input-field">
 
-                <input type="email" name="email" placeholder="Email" required class="input-field"><br><br>
+                <input type="email" id="email" name="email" placeholder="Email" required class="input-field">
 
-                <textarea name="message" placeholder="Сообщение" rows="4" required class="input-field"></textarea><br><br>
+                <textarea id="message" name="message" placeholder="Сообщение" rows="4" required class="input-field"></textarea>
 
                 <button type="submit" class="pop-up_btn body2 text-white">Отправить</button>
             </form>
@@ -30,6 +30,5 @@
     </section>
 
 </div>
-
 </body>
 </html>
