@@ -1,0 +1,72 @@
+openapi: 3.0.0
+
+info:
+  title: Portfolio API
+  description: API для сайта-портфолио дизайнера
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8080
+
+paths:
+  /api/services:
+    get:
+      summary: Получить список услуг
+      responses:
+        '200':
+          description: Список услуг
+
+  /api/services/{id}:
+    get:
+      summary: Получить услугу по id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Услуга найдена
+        '404':
+          description: Услуга не найдена
+
+  /api/messages:
+    get:
+      summary: Получить список заявок
+      responses:
+        '200':
+          description: Список заявок
+
+    post:
+      summary: Отправить заявку
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MessageInput'
+      responses:
+        '201':
+          description: Заявка сохранена
+        '400':
+          description: Ошибка заполнения формы
+
+components:
+  schemas:
+    MessageInput:
+      type: object
+      required:
+        - name
+        - email
+        - message
+      properties:
+        name:
+          type: string
+          example: Олеся
+        email:
+          type: string
+          example: test@mail.com
+        message:
+          type: string
+          example: Хочу заказать фирменный стиль
