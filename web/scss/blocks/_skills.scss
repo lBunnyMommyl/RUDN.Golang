@@ -1,0 +1,17 @@
+
+.skills {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 64px;
+align-self: stretch;
+}
+
+.skills_image {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+

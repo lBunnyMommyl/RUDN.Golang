@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="serv1.html" class="back_btn body3">← Назад</a>
+
+    <section class="serv">
+        <div class="serv_content">
+            <p class="h2">Оставить<br>заявку</p>
+
+            <form action="/api/messages" method="post" class="form-center">
+                <input type="text" name="name" placeholder="ФИО" required class="input-field"><br><br>
+
+                <input type="email" name="email" placeholder="Email" required class="input-field"><br><br>
+
+                <textarea name="message" placeholder="Сообщение" rows="4" required class="input-field"></textarea><br><br>
+
+                <button type="submit" class="pop-up_btn body2 text-white">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
